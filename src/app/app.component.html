@@ -8,4 +8,6 @@
     <input type="number" step="1.0" [(ngModel)]="rectSize.height" />
   </p>
 </div>
-<app-rect />
+
+<!--2-way syntax is used on size to complete our custom 2-way binding-->
+<app-rect [(size)]="rectSize"/>
